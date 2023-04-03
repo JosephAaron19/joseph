@@ -259,3 +259,17 @@ main{
     font-weight: 200;
   }
 }
+
+/*====About Section START====*/
+#about{
+  padding: 70px 30px;
+}
+
+/*Global heading*/
+.sub-heading{
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/*====About Section END====*/
