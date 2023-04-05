@@ -673,8 +673,8 @@ display: inline-block;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /*transform: scale(0); /*este codigo le da la accion de ocultar y saparecer cuando el puntero del click lo toca*/
-  /*visibility: hidden; /*este codigo le da la accion de ocultar y  aparecer cuando el puntero del click lo toca*/
+  transform: scale(0); /*este codigo le da la accion de ocultar y saparecer cuando el puntero del click lo toca*/
+  visibility: hidden; /*este codigo le da la accion de ocultar y  aparecer cuando el puntero del click lo toca*/
   transition: 0.4s;
   border-radius: 10px;
 }
@@ -742,6 +742,50 @@ display: inline-block;
   display: flex;
   gap: 25px;
   width: 100%;
+}
+#contact .contact-row .contact-left{
+  flex: 40px;
+  min-width: 40%;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+  border-radius: 4px;
+  padding: 30px;
+
+}
+
+#contact .contact-row .contact-left .icon-box{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 30px 0;
+}
+
+#contact .contact-row .contact-left .icon-box .icon i{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
+  text-align: center;
+  line-height: 47px;
+  font-size: 20px;
+  color: var(--themeColor);
+  transform: 0.5s;
+}
+
+#contact .contact-row .contact-left .icon-box:hover .icon i{
+   background-color: var(--themeColor);
+   color: var(--bgColor);
+}
+
+#contact .contact-row .contact-left .icon-box .info h4{
+  font-size: 20px;
+  color: var(--sideBGColor);
+  font-weight: 600;
+}
+#contact .contact-row .contact-left .icon-box .info h4 + p{
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
 }
 /* === Contact Section END=== */
 
