@@ -639,8 +639,109 @@ display: inline-block;
 /* === Portfolio Section START== */
 #portfolio{
   padding: 70px 30px;
-  
 }
 
+#portfolio .port-row{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+
+#portfolio .port-row .port-item{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#portfolio .port-row .port-item .port-img img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+#portfolio .port-row .port-item .port-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--themeColor);
+  padding: 0 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /*transform: scale(0); /*este codigo le da la accion de ocultar y saparecer cuando el puntero del click lo toca*/
+  /*visibility: hidden; /*este codigo le da la accion de ocultar y  aparecer cuando el puntero del click lo toca*/
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+#portfolio .port-row .port-item:hover .port-info{
+  transform: scale(1);
+  visibility: visible;
+}
+
+#portfolio .port-row .port-item .port-info h4{
+  color: var(--bgColor);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#portfolio .port-row .port-item .port-info h4 + p{
+  color: var(--bgColor);
+  font-size: 14px;
+}
+
+#portfolio .port-row .port-item:hover .port-info a{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--bgColor);
+  border-radius: 50%;
+  color: var(--themeColor );
+  line-height: 46px;
+  transition: 0.4s;
+}
+
+#portfolio .port-row .port-item:hover .port-info a:hover{
+  background-color: var(--sideBGColor);
+  color: var(--bgColor);
+}
+
+/* Mobile Found*/
+@media only screen and (max-width: 650px){
+  #portfolio{
+    padding: 50px 10px;
+  }
+  
+  #portfolio .port-row{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+}
+@media only screen and (max-width: 350px){
+  #portfolio .port-row{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+  }
+}
 /* === Portfolio Section END=== */
+/*---------------------------------------------------------------------------------------------*/
+/* === Contact Section START=== */
+#contact{
+  padding: 70px 30px;
+}
+
+#contact .contact-row{
+  margin-top: 50px;
+  display: flex;
+  gap: 25px;
+  width: 100%;
+}
+/* === Contact Section END=== */
 
