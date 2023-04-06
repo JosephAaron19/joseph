@@ -11,10 +11,18 @@ MenuBtn.addEventListener('click', function(e){
 //Typing Effect
 
 let typed =  new Typed('.auto-input',{
-    strings: ['Front-END Developer junior!', 'Developer junior',],
+    strings: ['Developer junior',],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
     loop: true,
 })
 
+//Activate link state on scroll
+
+//Get all links
+
+let naviLinks = document.querySelectorAll('nav ul li a')
+//Get all sections
+let sections = document.querySelectorAll('section')
+console.log(sections)
