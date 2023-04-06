@@ -30,10 +30,10 @@
           <!-- NavBar -->
           <nav>
             <ul>
-                <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-user"></i> About Me</a></li>
-                <li><a href="#"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> About Me</a></li>
+                <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             </ul>
           </nav>
 
@@ -299,69 +299,67 @@
 
         <section id="contact">
 
-          <h1 class="sub-heading">Contact</h1>
-          <div class="divider"></div>
-          <p class="sub-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit voluptate veniam voluptas vitae earum alias aliquid porro beatae facilis. Delectus natus quam nesciunt placeat accusamus a autem, voluptatum eveniet tempora.</p>
+            <h1 class="sub-heading">Contact</h1>
+            <div class="divider"></div>
+            <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat 
+              totam eaque fugiat corporis quod voluptate reiciendis vel odio, iure aliquid?
+            </p>
 
-          <div class="contact-row">
 
-            <!--left col-->
-            <div class="contact-left">
-              <!--Email Box-->
-            <div class="icon-box">
-              <div class="icon">
-                <i class="fa-solid fa-envelope"></i>
+            <div class="contact-row">
+
+              <!---- left col   -->
+              <div class="contact-left">
+                <!--- Email box-->
+                <div class="icon-box">
+                  <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="info">
+                    <h4>Email:</h4>
+                    <p>ruizbardales2002@gmail.com</p>
+                  </div>
+                </div>
+                <!--- call box-->
+                <div class="icon-box">
+                  <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="info">
+                    <h4>call:</h4>
+                    <p>950814769</p>
+                  </div>
+                </div>
+                <!--- location box-->
+                <div class="icon-box">
+                  <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="info">
+                    <h4>location:</h4>
+                    <p>Iquitos, Maynas, Loreto</p>
+                  </div>
+                </div>
+
+                <!--  MAP -->
+                <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1314295586835!2d-73.29581378575196!3d-3.781569444502823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ea0e3351a1809d%3A0x4f8a05ccb90227ee!2sCa.%20Pedro%20del%20%C3%81guila%2C%20Iquitos%2016008!5e0!3m2!1ses-419!2spe!4v1680744132953!5m2!1ses-419!2spe"
+                   width="310" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+                  </div>
               </div>
-              <div class="info">
-                <h4>Email:</h4>
-                <p>ruizjoseph2002@gmail.com</p>
+
+              <!---- rigth col   -->
+              <div class="contact-right">
+
+                <form action="">
+                  <input type="text" name="name" id="name" placeholder="Your Name">
+                  <input type="email" name="email" id="email" placeholder="Yor Email">
+                  <input type="text" name="subject" id="subject" placeholder="subject">
+                  <textarea name="msg" id="msg" rows="9" placeholder="Your Message"></textarea>
+                  <input type="submit" value="Send Message">
+                </form>
               </div>
             </div>
-              <!--Call Box-->
-            <div class="icon-box">
-              <div class="icon">
-                <i class="fa-solid fa-phone"></i>
-              </div>
-              <div class="info">
-                <h4>Call:</h4>
-                <p>+51 950 814 769</p>
-              </div>
-            </div>
-              <!--location Box-->
-            <div class="icon-box">
-              <div class="icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div class="info">
-                <h4>Location:</h4>
-                <p>iquitos, loreto, maynas</p>
-              </div>
-            </div>
-
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1314295586835!2d-73.29581378575193!3d-3.781569444502823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ea0e3351a1809d%3A0x4f8a05ccb90227ee!2sCa.%20Pedro%20del%20%C3%81guila%2C%20Iquitos%2016008!5e0!3m2!1ses-419!2spe!4v1680735006574!5m2!1ses-419!2spe" width="300" height="300" style="border:4;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
-
-          </div>
-
-            <!--left col-->
-
-            <div class="contact-right">
-
-              <form action="">
-
-                <input type="text" name="name" id="name" placeholder="Your Name">
-                <input type="email" name="email" id="email" placeholder="Your Email">
-                <input type="text" name="subject" id="subject" placeholder="subject">
-                <textarea name="msg" id="msg" rows="9" placeholder="Your Massage"></textarea>
-                <input type="submit" value="send Message">
-
-              </form>
-
-            </div>
-          
-
         </section>
         <!--====Contact Section END====-->
       </main>
