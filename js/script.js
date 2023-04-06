@@ -26,3 +26,18 @@ let naviLinks = document.querySelectorAll('nav ul li a')
 //Get all sections
 let sections = document.querySelectorAll('section')
 console.log(sections)
+
+window.addEventListener('scroll', function(){
+    const scrollPos = window.scrollY + 20
+    sections.forEach(section => {
+        if(scrollPos > section.offsetTop && scrollPos > (section.offsetTop + section.offsetHeight)){
+            naviLinks.forEach(link => {
+                link.classList.remove('active');
+                if(section.getAttribute('id') === link.getAttribute('href').substring(1)){
+                    link.classList.add('active')
+                }
+            });
+        }
+        
+    });
+});
